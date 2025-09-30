@@ -1,7 +1,7 @@
 /**
  * Phoenix Tracking Asset: phoenix-tracking.js
- * Build-Time Generated: 2025-09-30T22:56:30.295Z
- * Content Hash: 68db9711
+ * Build-Time Generated: 2025-09-30T23:14:50.534Z
+ * Content Hash: 6828580e
  * 
  * This asset is managed by Phoenix BuildTimeTrackingManager.
  * DO NOT EDIT MANUALLY - changes will be overwritten.
@@ -12,7 +12,7 @@
  * Generated for production builds - survives Next.js compilation
  * 
  * Project ID: 2d5fe3f8-357b-4bbe-8a42-4d2804227694
- * Generated at: 2025-09-30T22:56:30.071Z
+ * Generated at: 2025-09-30T23:14:50.533Z
  * Framework: next.js
  * Type: app-router
  */
@@ -47,7 +47,7 @@
         this.targetOrigin = '*';
         
         // Build-time specific properties
-        this.buildTime = '2025-09-30T22:56:30.071Z';
+        this.buildTime = '2025-09-30T23:14:50.533Z';
         this.trackingMode = 'build-time';
         this.framework = 'next.js';
         this.projectType = 'app-router';
