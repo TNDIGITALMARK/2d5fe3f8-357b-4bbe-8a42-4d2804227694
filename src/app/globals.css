@@ -5,82 +5,101 @@ All colors MUST be HSL.
 */
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 222.2 84% 4.9%;
+  /* TrainSpotter Hub Light Theme - Industrial Railway Aesthetic */
+  --background: 210 20% 98%;
+  --foreground: 210 50% 8%;
 
   --card: 0 0% 100%;
-  --card-foreground: 222.2 84% 4.9%;
+  --card-foreground: 210 50% 8%;
 
   --popover: 0 0% 100%;
-  --popover-foreground: 222.2 84% 4.9%;
+  --popover-foreground: 210 50% 8%;
 
-  --primary: 222.2 47.4% 11.2%;
-  --primary-foreground: 210 40% 98%;
+  /* Deep Navy Blue Primary */
+  --primary: 210 50% 8%;
+  --primary-foreground: 210 20% 98%;
 
-  --secondary: 210 40% 96.1%;
-  --secondary-foreground: 222.2 47.4% 11.2%;
+  /* Steel Gray Secondary */
+  --secondary: 210 15% 85%;
+  --secondary-foreground: 210 50% 8%;
 
-  --muted: 210 40% 96.1%;
-  --muted-foreground: 215.4 16.3% 46.9%;
+  --muted: 210 15% 90%;
+  --muted-foreground: 210 25% 45%;
 
-  --accent: 210 40% 96.1%;
-  --accent-foreground: 222.2 47.4% 11.2%;
+  /* Vibrant Orange Accent */
+  --accent: 25 95% 53%;
+  --accent-foreground: 210 50% 8%;
 
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 40% 98%;
 
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --ring: 222.2 84% 4.9%;
+  --border: 210 15% 85%;
+  --input: 210 15% 90%;
+  --ring: 25 95% 53%;
 
   --radius: 0.5rem;
 
-  --sidebar-background: 0 0% 98%;
-  --sidebar-foreground: 240 5.3% 26.1%;
-  --sidebar-primary: 240 5.9% 10%;
-  --sidebar-primary-foreground: 0 0% 98%;
-  --sidebar-accent: 240 4.8% 95.9%;
-  --sidebar-accent-foreground: 240 5.9% 10%;
-  --sidebar-border: 220 13% 91%;
-  --sidebar-ring: 217.2 91.2% 59.8%;
+  /* Railway-inspired sidebar */
+  --sidebar-background: 210 50% 8%;
+  --sidebar-foreground: 210 20% 85%;
+  --sidebar-primary: 25 95% 53%;
+  --sidebar-primary-foreground: 210 50% 8%;
+  --sidebar-accent: 210 40% 15%;
+  --sidebar-accent-foreground: 210 20% 85%;
+  --sidebar-border: 210 40% 12%;
+  --sidebar-ring: 25 95% 53%;
+
+  /* TrainSpotter Hub Custom Colors */
+  --train-gold: 45 95% 60%;
+  --steel-blue: 210 30% 25%;
+  --locomotive-red: 0 75% 55%;
+  --railway-green: 140 60% 35%;
 }
 
 .dark {
-  --background: 222.2 84% 4.9%;
-  --foreground: 210 40% 98%;
+  /* TrainSpotter Hub Dark Theme - Night Railway Operations */
+  --background: 210 50% 4%;
+  --foreground: 210 20% 90%;
 
-  --card: 222.2 84% 4.9%;
-  --card-foreground: 210 40% 98%;
+  --card: 210 45% 6%;
+  --card-foreground: 210 20% 90%;
 
-  --popover: 222.2 84% 4.9%;
-  --popover-foreground: 210 40% 98%;
+  --popover: 210 45% 6%;
+  --popover-foreground: 210 20% 90%;
 
-  --primary: 210 40% 98%;
-  --primary-foreground: 222.2 47.4% 11.2%;
+  --primary: 25 95% 53%;
+  --primary-foreground: 210 50% 4%;
 
-  --secondary: 217.2 32.6% 17.5%;
-  --secondary-foreground: 210 40% 98%;
+  --secondary: 210 25% 15%;
+  --secondary-foreground: 210 20% 85%;
 
-  --muted: 217.2 32.6% 17.5%;
-  --muted-foreground: 215 20.2% 65.1%;
+  --muted: 210 25% 12%;
+  --muted-foreground: 210 15% 60%;
 
-  --accent: 217.2 32.6% 17.5%;
-  --accent-foreground: 210 40% 98%;
+  --accent: 25 95% 53%;
+  --accent-foreground: 210 50% 4%;
 
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 210 40% 98%;
 
-  --border: 217.2 32.6% 17.5%;
-  --input: 217.2 32.6% 17.5%;
-  --ring: 212.7 26.8% 83.9%;
-  --sidebar-background: 240 5.9% 10%;
-  --sidebar-foreground: 240 4.8% 95.9%;
-  --sidebar-primary: 224.3 76.3% 48%;
-  --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 240 3.7% 15.9%;
-  --sidebar-accent-foreground: 240 4.8% 95.9%;
-  --sidebar-border: 240 3.7% 15.9%;
-  --sidebar-ring: 217.2 91.2% 59.8%;
+  --border: 210 25% 15%;
+  --input: 210 25% 12%;
+  --ring: 25 95% 53%;
+
+  --sidebar-background: 210 55% 3%;
+  --sidebar-foreground: 210 20% 80%;
+  --sidebar-primary: 25 95% 53%;
+  --sidebar-primary-foreground: 210 50% 4%;
+  --sidebar-accent: 210 35% 8%;
+  --sidebar-accent-foreground: 210 20% 80%;
+  --sidebar-border: 210 35% 6%;
+  --sidebar-ring: 25 95% 53%;
+
+  /* TrainSpotter Hub Dark Custom Colors */
+  --train-gold: 45 85% 65%;
+  --steel-blue: 210 40% 35%;
+  --locomotive-red: 0 70% 60%;
+  --railway-green: 140 55% 45%;
 }
 
 @theme {
@@ -124,15 +143,24 @@ All colors MUST be HSL.
   --color-sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
   --color-sidebar-border: hsl(var(--sidebar-border));
   --color-sidebar-ring: hsl(var(--sidebar-ring));
-  
+
+  /* TrainSpotter Hub Custom Colors */
+  --color-train-gold: hsl(var(--train-gold));
+  --color-steel-blue: hsl(var(--steel-blue));
+  --color-locomotive-red: hsl(var(--locomotive-red));
+  --color-railway-green: hsl(var(--railway-green));
+
   /* Border Radius */
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
-  
+
   /* Animations */
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  /* TrainSpotter Hub Typography */
+  --font-railway: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 @keyframes accordion-down {
@@ -160,4 +188,57 @@ All colors MUST be HSL.
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
+  font-family: var(--font-railway);
+}
+
+/* TrainSpotter Hub Custom Styles */
+.train-card {
+  background: linear-gradient(135deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
+  border: 1px solid hsl(var(--border));
+  transition: all 0.3s ease;
+}
+
+.train-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: hsl(var(--accent));
+}
+
+.hero-section {
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--steel-blue)) 100%);
+  color: hsl(var(--primary-foreground));
+}
+
+.locomotive-badge {
+  background: hsl(var(--train-gold));
+  color: hsl(var(--primary));
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.route-indicator {
+  background: hsl(var(--railway-green));
+  color: white;
+}
+
+.status-active {
+  background: hsl(var(--railway-green));
+  color: white;
+}
+
+.status-delayed {
+  background: hsl(var(--locomotive-red));
+  color: white;
+}
+
+.nav-accent {
+  color: hsl(var(--accent));
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--train-gold)) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

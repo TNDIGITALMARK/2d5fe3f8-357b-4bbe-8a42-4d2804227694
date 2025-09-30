@@ -6,6 +6,7 @@ import { QueryProvider } from "@/components/query-provider";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import NavigationHeader from "@/components/NavigationHeader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,8 +19,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "TrainSpotter Hub",
+  description: "The ultimate destination for train enthusiasts - discover locomotives, track journeys, and connect with the railway community",
 };
 
 export default function RootLayout({
@@ -40,6 +41,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <TooltipProvider>
+              <NavigationHeader />
               {children}
               <Toaster />
               <Sonner />

@@ -1,37 +1,73 @@
+import HeroSection from "@/components/HeroSection";
+import TrainCard from "@/components/TrainCard";
+import { Button } from "@/components/ui/button";
+import { locomotives } from "@/lib/mock-data";
+import { ArrowRight } from "lucide-react";
+
 export const dynamic = 'force-dynamic'
 
 export default function Index() {
+  const featuredLocomotives = locomotives.filter(loc => loc.status === 'active').slice(0, 6);
+
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="text-center max-w-2xl px-4">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your App</h1>
-        <p className="text-xl mb-6 text-gray-600">
-          This template is configured to be absolutely lenient - builds never fail on validation errors.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-left">
-          <div className="p-4 bg-green-50 rounded-lg border border-green-200">
-            <h3 className="font-semibold text-green-800 mb-2">✅ Always Builds</h3>
-            <ul className="text-green-700 space-y-1">
-              <li>• TypeScript errors ignored</li>
-              <li>• ESLint warnings ignored</li>
-              <li>• Global error boundaries</li>
-              <li>• Asset type safety</li>
-            </ul>
+    <main className="min-h-screen">
+      {/* Hero Section */}
+      <HeroSection />
+
+      {/* Featured Locomotives Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-4xl font-bold mb-6">
+              Featured <span className="gradient-text">Locomotives</span>
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Discover our collection of magnificent trains, from vintage steam engines to cutting-edge electric locomotives.
+            </p>
           </div>
-          <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
-            <h3 className="font-semibold text-blue-800 mb-2">🚀 Production Ready</h3>
-            <ul className="text-blue-700 space-y-1">
-              <li>• Next.js 15.5.2 App Router</li>
-              <li>• Vercel optimized</li>
-              <li>• SSR/SEO friendly</li>
-              <li>• Browser API protection</li>
-            </ul>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {featuredLocomotives.map((locomotive) => (
+              <TrainCard
+                key={locomotive.id}
+                locomotive={locomotive}
+                onClick={() => console.log('Clicked locomotive:', locomotive.name)}
+              />
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Button size="lg" variant="outline" className="hover:bg-accent hover:text-accent-foreground">
+              View All Locomotives
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
           </div>
         </div>
-        <p className="mt-6 text-gray-500">
-          Start building your amazing project here! This template will never fail builds due to validation errors.
-        </p>
-      </div>
-    </div>
+      </section>
+
+      {/* Quick Stats Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div className="space-y-2">
+              <div className="text-3xl font-bold text-accent">150+</div>
+              <div className="text-muted-foreground">Locomotives Tracked</div>
+            </div>
+            <div className="space-y-2">
+              <div className="text-3xl font-bold text-accent">2.5K+</div>
+              <div className="text-muted-foreground">Routes Mapped</div>
+            </div>
+            <div className="space-y-2">
+              <div className="text-3xl font-bold text-accent">12K+</div>
+              <div className="text-muted-foreground">Community Photos</div>
+            </div>
+            <div className="space-y-2">
+              <div className="text-3xl font-bold text-accent">45+</div>
+              <div className="text-muted-foreground">Countries Covered</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
