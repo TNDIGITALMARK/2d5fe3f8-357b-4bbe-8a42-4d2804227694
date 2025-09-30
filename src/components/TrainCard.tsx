@@ -13,6 +13,15 @@ interface TrainCardProps {
 }
 
 export default function TrainCard({ locomotive, onClick }: TrainCardProps) {
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    } else {
+      // Default client-side behavior
+      console.log('Clicked locomotive:', locomotive.name);
+    }
+  };
+
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'active':
@@ -38,7 +47,7 @@ export default function TrainCard({ locomotive, onClick }: TrainCardProps) {
   };
 
   return (
-    <Card className="train-card cursor-pointer overflow-hidden group" onClick={onClick}>
+    <Card className="train-card cursor-pointer overflow-hidden group" onClick={handleClick}>
       <div className="relative h-48 w-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10" />
         <div className="w-full h-full bg-gradient-to-br from-steel-blue to-primary flex items-center justify-center">

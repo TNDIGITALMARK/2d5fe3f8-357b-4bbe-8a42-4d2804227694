@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Static export for client-side only deployment
+  output: 'export',
+  trailingSlash: true,
+
   // Absolutely lenient configuration - never fail builds
   typescript: {
     ignoreBuildErrors: true,
@@ -8,30 +12,14 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  
-  experimental: {
-    outputFileTracingRoot: process.cwd(), // Fix workspace root warnings
-  },
-  
-  // Simple image configuration
-  images: { 
+
+  // Simple image configuration for static export
+  images: {
     unoptimized: true,
   },
 
   // Basic performance settings
   poweredByHeader: false,
-  
-  // Flexible iframe embedding
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: [
-          { key: "Content-Security-Policy", value: "frame-ancestors *" },
-        ],
-      },
-    ];
-  },
 };
 
 export default nextConfig;

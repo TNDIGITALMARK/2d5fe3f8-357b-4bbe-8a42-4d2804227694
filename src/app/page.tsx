@@ -4,8 +4,6 @@ import { Button } from "@/components/ui/button";
 import { locomotives } from "@/lib/mock-data";
 import { ArrowRight } from "lucide-react";
 
-export const dynamic = 'force-dynamic'
-
 export default function Index() {
   const featuredLocomotives = locomotives.filter(loc => loc.status === 'active').slice(0, 6);
 
@@ -31,7 +29,6 @@ export default function Index() {
               <TrainCard
                 key={locomotive.id}
                 locomotive={locomotive}
-                onClick={() => console.log('Clicked locomotive:', locomotive.name)}
               />
             ))}
           </div>
